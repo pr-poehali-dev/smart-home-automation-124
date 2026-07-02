@@ -1,9 +1,11 @@
 import { useState, useEffect, MouseEvent } from "react"
 import { cn } from "../lib/utils"
+import { useTheme } from "../context/ThemeContext"
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { theme, toggleTheme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +35,7 @@ export function Header() {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
         <a href="/" className="flex items-center gap-2 group" onClick={scrollToTop}>
-          <img src="/images/hously-logo.svg" alt="Пространство" width={120} height={32} className="w-auto h-6" />
+          <span className="shimmer-text text-2xl font-bold tracking-tight">AllShop</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide">
@@ -55,17 +57,26 @@ export function Header() {
           ))}
         </ul>
 
-        <a
-          href="mailto:slslsnikia@gmail.com"
-          className={cn(
-            "hidden md:inline-flex items-center gap-2 text-sm px-5 py-2.5 transition-all duration-300",
-            scrolled
-              ? "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white"
-              : "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white",
-          )}
-        >
-          Связаться
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            className="flex items-center gap-2 text-xs px-3 py-2 border border-white/30 text-white hover:bg-white/10 transition-all duration-300 rounded-sm"
+            aria-label="Переключить тему"
+          >
+            {theme === "light" ? "🌙 Тёмная" : "☀️ Светлая"}
+          </button>
+          <a
+            href="mailto:slslsnikia@gmail.com"
+            className={cn(
+              "inline-flex items-center gap-2 text-sm px-5 py-2.5 transition-all duration-300",
+              scrolled
+                ? "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white"
+                : "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white",
+            )}
+          >
+            Связаться
+          </a>
+        </div>
 
         <button
           className="md:hidden z-50 transition-colors duration-300 text-white"
@@ -113,13 +124,21 @@ export function Header() {
             ))}
           </ul>
 
-          <a
-            href="mailto:slslsnikia@gmail.com"
-            className="inline-flex items-center justify-center gap-2 text-sm px-5 py-2.5 bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white transition-all duration-300 mb-4"
-            onClick={closeMobileMenu}
-          >
-            Связаться
-          </a>
+          <div className="flex flex-col gap-3 mb-4">
+            <button
+              onClick={() => { toggleTheme(); closeMobileMenu() }}
+              className="inline-flex items-center justify-center gap-2 text-sm px-5 py-2.5 border border-white/30 text-white hover:bg-white/10 transition-all duration-300"
+            >
+              {theme === "light" ? "🌙 Тёмная тема" : "☀️ Светлая тема"}
+            </button>
+            <a
+              href="mailto:slslsnikia@gmail.com"
+              className="inline-flex items-center justify-center gap-2 text-sm px-5 py-2.5 bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white transition-all duration-300"
+              onClick={closeMobileMenu}
+            >
+              Связаться
+            </a>
+          </div>
         </div>
       </div>
     </header>

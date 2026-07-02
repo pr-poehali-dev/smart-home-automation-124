@@ -34,13 +34,22 @@ export function HighlightedText({ children }: HighlightedTextProps) {
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <defs>
+          <linearGradient id="shimmer-line" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#c084fc">
+              <animate attributeName="stop-color" values="#c084fc;#f472b6;#fb923c;#facc15;#34d399;#60a5fa;#c084fc" dur="4s" repeatCount="indefinite" />
+            </stop>
+            <stop offset="100%" stopColor="#60a5fa">
+              <animate attributeName="stop-color" values="#60a5fa;#c084fc;#f472b6;#fb923c;#facc15;#34d399;#60a5fa" dur="4s" repeatCount="indefinite" />
+            </stop>
+          </linearGradient>
+        </defs>
         <path
           d="M0 8 Q50 2, 100 6 T200 8"
-          stroke="rgb(251 146 60)"
+          stroke="url(#shimmer-line)"
           strokeWidth="2"
           fill="none"
           strokeLinecap="round"
-          className="transition-all duration-800"
           style={{
             strokeDasharray: 200,
             strokeDashoffset: isVisible ? 0 : 200,

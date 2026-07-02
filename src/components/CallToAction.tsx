@@ -21,10 +21,12 @@ export function CallToAction() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:slslsnikia@gmail.com"
-              className="inline-flex items-center justify-center gap-3 bg-primary-foreground text-foreground px-8 py-4 text-sm tracking-wide hover:bg-primary-foreground/90 transition-colors duration-300 group"
+              className="shimmer-border inline-flex items-center justify-center gap-3 p-px text-sm tracking-wide group"
             >
-              Написать нам
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <span className="inline-flex items-center gap-3 bg-foreground text-primary-foreground px-8 py-4 hover:bg-foreground/80 transition-colors duration-300 w-full">
+                Написать нам
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </span>
             </a>
             <a
               href="mailto:slslsnikia@gmail.com"
