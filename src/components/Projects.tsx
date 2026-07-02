@@ -8,7 +8,7 @@ const projects = [
     category: "Одежда",
     location: "Новая коллекция",
     year: "2025",
-    image: "/images/hously-1.png",
+    image: "https://cdn.poehali.dev/projects/7972384d-106a-45e1-b4b0-079166f1640d/files/91e894a2-0faf-4fb4-89e9-32eddb7cfca2.jpg",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const projects = [
     category: "Обувь",
     location: "Хиты продаж",
     year: "2025",
-    image: "/images/hously-2.png",
+    image: "https://cdn.poehali.dev/projects/7972384d-106a-45e1-b4b0-079166f1640d/files/fac58449-9495-4768-b249-b04253ce185d.jpg",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const projects = [
     category: "Украшения",
     location: "Лимитированная серия",
     year: "2025",
-    image: "/images/hously-3.png",
+    image: "https://cdn.poehali.dev/projects/7972384d-106a-45e1-b4b0-079166f1640d/files/88030a5e-3548-4159-be57-18ed0969aeea.jpg",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const projects = [
     category: "Аксессуары",
     location: "В наличии",
     year: "2025",
-    image: "/images/hously-4.png",
+    image: "https://cdn.poehali.dev/projects/7972384d-106a-45e1-b4b0-079166f1640d/files/cb889228-88ed-4740-ae69-5fef518c8c7f.jpg",
   },
 ]
 

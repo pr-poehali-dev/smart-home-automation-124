@@ -60,13 +60,7 @@ export function Philosophy() {
               <HighlightedText>характером</HighlightedText>
             </h2>
 
-            <div className="relative hidden lg:block">
-              <img
-                src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
-                className="opacity-90 relative z-10 w-auto"
-              />
-            </div>
+
           </div>
 
           {/* Right column - Description and Philosophy items */}
