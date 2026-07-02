@@ -1,0 +1,31 @@
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 605 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://10.112.159.98:5173/
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+4:57:01 AM [vite] hmr update /src/components/Header.tsx, /src/index.css
+4:57:12 AM [vite] hmr update /src/components/Header.tsx, /src/index.css
+4:57:21 AM [vite] hmr update /src/components/Hero.tsx, /src/index.css
+4:57:34 AM [vite] hmr update /src/components/Projects.tsx, /src/index.css
+4:57:43 AM [vite] hmr update /src/components/Projects.tsx, /src/index.css
+4:58:13 AM [vite] hmr update /src/components/Philosophy.tsx, /src/index.css
+4:58:23 AM [vite] hmr update /src/components/Philosophy.tsx, /src/index.css
+4:58:33 AM [vite] hmr update /src/components/Philosophy.tsx, /src/index.css
+4:58:50 AM [vite] hmr update /src/components/Expertise.tsx, /src/index.css
+4:59:01 AM [vite] hmr update /src/components/Expertise.tsx, /src/index.css
+4:59:25 AM [vite] hmr update /src/components/FAQ.tsx, /src/index.css
+4:59:52 AM [vite] hmr update /src/components/CallToAction.tsx, /src/index.css
+5:00:01 AM [vite] hmr update /src/components/Footer.tsx, /src/index.css
+5:00:11 AM [vite] hmr update /src/components/Footer.tsx, /src/index.css
+5:00:22 AM [vite] hmr update /src/components/Footer.tsx, /src/index.css
+5:00:30 AM [vite] hmr update /src/components/Footer.tsx, /src/index.css
+5:00:39 AM [vite] hmr update /src/components/Header.tsx, /src/index.css
+5:00:50 AM [vite] hmr update /src/components/Header.tsx, /src/index.css
+5:01:19 AM [vite] page reload index.html
