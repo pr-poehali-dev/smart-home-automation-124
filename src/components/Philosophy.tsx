@@ -60,7 +60,13 @@ export function Philosophy() {
               <HighlightedText>характером</HighlightedText>
             </h2>
 
-
+            <div className="relative hidden lg:block mt-8">
+              <img
+                src="https://cdn.poehali.dev/projects/7972384d-106a-45e1-b4b0-079166f1640d/files/45055464-265b-4e37-94a3-6e59761bb47c.jpg"
+                alt="Эскиз пальто"
+                className="w-64 opacity-85 relative z-10"
+              />
+            </div>
           </div>
 
           {/* Right column - Description and Philosophy items */}
